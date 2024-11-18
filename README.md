@@ -19,18 +19,18 @@ Display a list of wheels with UI
 - [x] Import the Wheel images.
 - [ ] Set container maximum size to “1152px X 720px”
 - [x] Background image for the container should be set.
-- [ ] Wheel Title the top with capital letters.
-- [ ] Wheel Title Left Border black color design.
-- [ ] Wheels related para next to wheels title in italics.
-- [ ] Wheels information needs to be stored.
-- [ ] Name in capital, with greater font weight.
-- [ ] Meta Data.
-- [ ] Acronym in capital, with greater font weight
-- [ ] Display three wheels images horizontally in a page.
+- [x] Wheel Title the top with capital letters.
+- [x] Wheel Title Left Border black color design.
+- [x] Wheels related para next to wheels title in italics.
+- [x] Wheels information needs to be stored.
+- [x] Name in capital, with greater font weight.
+- [x] Meta Data.
+- [x] Acronym in capital, with greater font weight
+- [x] Display three wheels images horizontally in a page.
 - [ ] Onclick of any wheel, it should zoom.
-- [ ] When Wheel is zoomed, background image should be added for the wheel
+- [x] When Wheel is zoomed, background image should be added for the wheel
 - [ ] When one wheel is zoomed, and other is clicked, then this wheel should zoom
-- [ ] Provide buttons to Slide
+- [x] Provide buttons to Slide
 - [ ] Onclicking slide button ,slider functionality should happen. i.e Move to next wheel
 - [ ] Key board navigation should be enable for the slider button
 - [ ] If last or first wheel is reached, then disable to button left and right accordingly
