@@ -1,2 +1,33 @@
 # Wheel-Project
 Display a list of wheels with UI
+
+# Instructions
+1. Convert the attached “layout.jpg” to HTML without using any html framework like (bootstrap,
+w3css etc.). The assets are shared in an image zip and use dummy content.
+2. Keep container maximum size of “1152px X 720px”. Layout should be vertical center position.
+3. Slider functionality should be enabled without using any plugin (as per design).
+4. Zoom functionality – by default all wheel images should be in normal state. On click, an active
+wheel should be zoomed smoothly as per design.
+5. While clicking left/right arrow, an active state will be inactive (zoom to normal state) and then
+move accordingly.
+6. If slide reached the beginning/end, the left/right side arrow should be disabled (unable to click)
+
+# Task Need to be done.
+1. Import the Wheel images.
+2. Set container maximum size to “1152px X 720px”
+3. Background image for the container should be set.
+4. Wheel Title the top with capital letters.
+5. Wheel Title Left Border black color design.
+6. Wheels related para next to wheels title in italics
+7. Display three wheels images horizontally in a page.
+8. Wheels information needs to be stored
+    * Name in capital, with greater font weight
+    * Meta Data.
+    * Acronym in capital, with greater font weight
+9. Onclick of any wheel, it should zoom.
+10. When Wheel is zoomed, background image should be added for the wheel
+11. When one wheel is zoomed, and other is clicked, then this wheel should zoom
+12. Provide buttons to Slide
+13. Onclicking slide button ,slider functionality should happen. i.e Move to next wheel
+14. Key board navigation should be enable for the slider button
+15. If last or first wheel is reached, then disable to button left and right accordingly
