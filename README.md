@@ -27,9 +27,9 @@ Display a list of wheels with UI
 - [x] Meta Data.
 - [x] Acronym in capital, with greater font weight
 - [x] Display three wheels images horizontally in a page.
-- [ ] Onclick of any wheel, it should zoom.
+- [x] Onclick of any wheel, it should zoom.
 - [x] When Wheel is zoomed, background image should be added for the wheel
-- [ ] When one wheel is zoomed, and other is clicked, then this wheel should zoom
+- [x] When one wheel is zoomed, and other is clicked, then this wheel should zoom
 - [x] Provide buttons to Slide
 - [ ] Onclicking slide button ,slider functionality should happen. i.e Move to next wheel
 - [ ] Key board navigation should be enable for the slider button
