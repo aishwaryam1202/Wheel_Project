@@ -1,5 +1,5 @@
 {
-  "homepage": "https://aishwaryam1202.github.io/Wheel_Project/pull/3",
+  "homepage": "https://aishwaryam1202.github.io/Wheel_Project",
   "name": "wheels",
   "version": "0.1.0",
   "private": true,
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
