@@ -31,6 +31,6 @@ Display a list of wheels with UI
 - [x] When Wheel is zoomed, background image should be added for the wheel
 - [x] When one wheel is zoomed, and other is clicked, then this wheel should zoom
 - [x] Provide buttons to Slide
-- [ ] Onclicking slide button ,slider functionality should happen. i.e Move to next wheel
-- [ ] Key board navigation should be enable for the slider button
-- [ ] If last or first wheel is reached, then disable to button left and right accordingly
+- [x] Onclicking slide button ,slider functionality should happen. i.e Move to next wheel
+- [x] Key board navigation should be enable for the slider button
+- [x] If last or first wheel is reached, then disable to button left and right accordingly
