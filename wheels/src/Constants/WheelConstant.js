@@ -4,12 +4,14 @@ import wp6 from "./../Assets/wpf.png";
 
 export const allWheelList = [
   {
+    index: 0,
     name: "(WGU)",
     imgSrc: wgu,
     fWDType: "Standard on Touring FWD",
     metaInfo: "17-INCH CAST ALUMINUM WHEEL, FULLY PAINTED SILVER LITHO",
   },
   {
+    index: 1,
     name: "(WJR)",
     imgSrc: wjr,
     fWDType: "Standard on Touring FWD",
@@ -17,6 +19,7 @@ export const allWheelList = [
       "17-INCH CAST ALUMINUM DIAMOND - CUT WHEEL WITH BALTIC GRAY POCKETS",
   },
   {
+    index: 2,
     name: "(WP6)",
     imgSrc: wp6,
     fWDType:

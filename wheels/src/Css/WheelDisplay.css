@@ -18,10 +18,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   border: 1px solid black;
-}
-
-.background-div .wheels-img-div .wheel-pic-info-parent-selected:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .background-div .wheels-img-div .wheel-pic-info-parent .wheel-info-1 {
