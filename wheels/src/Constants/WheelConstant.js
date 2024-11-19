@@ -28,5 +28,15 @@ export const allWheelList = [
   },
 ];
 
-export const leftButtonText = "<";
-export const rightButtonText = ">";
+export const NAVIGATION_BUTTON_LIST = {
+  "previous" : {
+    id: "previous",
+    buttonText :"<",
+  },
+  "next" : {
+    id: "next",
+    buttonText :">",
+  }
+
+}
+

@@ -3,8 +3,7 @@ import { NavigationButton } from "./NavigationButton";
 import { WheelDisplay } from "./WheelDisplay";
 import {
   allWheelList,
-  leftButtonText,
-  rightButtonText,
+  NAVIGATION_BUTTON_LIST
 } from "../Constants/WheelConstant";
 import "./../Css/WheelList.css";
 
@@ -13,6 +12,7 @@ export class WheelList extends Component {
     super(props);
     this.onClickingWheel = this.onClickingWheel.bind(this);
     this.onNavigationButtonClick = this.onNavigationButtonClick.bind(this);
+    this.onKeyPress = this.onKeyPress.bind(this);
     this.state = {
       activeWheelIndex: 0,
       isPreviousBtnDisabled: true,
@@ -21,11 +21,16 @@ export class WheelList extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener("keydown", () => {
-      console.log("keydown: ", "keydown");
-    });
+    document.addEventListener("keydown",this.onKeyPress, false);
   }
 
+  onKeyPress(e) {
+    if(e.key === 'ArrowRight') {
+      this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.next.id);
+    } else if(e.key === 'ArrowLeft'){
+      this.onNavigationButtonClick(NAVIGATION_BUTTON_LIST.previous.id);
+    }
+  }
   onClickingWheel(index) {
     if (index !== this.state.activeWheelIndex) {
       this.setState({
@@ -36,16 +41,16 @@ export class WheelList extends Component {
 
   onNavigationButtonClick(type) {
     const { activeWheelIndex } = this.state;
-    if (type === "Previous") {
-      if (activeWheelIndex >= 1) {
+    if (type === NAVIGATION_BUTTON_LIST.previous.id) {
+      if (activeWheelIndex > 0) {
         this.setState({
-          activeWheelIndex: --activeWheelIndex,
+          activeWheelIndex: activeWheelIndex - 1,
         });
       }
     } else {
       if (activeWheelIndex <= allWheelList.length - 2)
         this.setState({
-          activeWheelIndex: activeWheelIndex++,
+          activeWheelIndex: activeWheelIndex + 1,
         });
     }
   }
@@ -74,25 +79,22 @@ export class WheelList extends Component {
 
   render() {
     const { activeWheelIndex } = this.state;
+    const {id: leftId, buttonText: leftButtonText } = NAVIGATION_BUTTON_LIST.previous;
+    const {id: rigthId, buttonText: rightButtonText } = NAVIGATION_BUTTON_LIST.next;
     return (
       <div className="wheels-img-div">
         <NavigationButton
+         type= {leftId}
           buttonText={leftButtonText}
           isDisabled={activeWheelIndex === 0}
+          onButtonClick={this.onNavigationButtonClick}
         />
         {this.getWheelList(allWheelList)}
-        {/* <div className="wheel-pic-info-parent-selected">
-          <img src={wgu} alt="" />
-          <div className="wheel-info-1">
-            17-INCH CAST ALUMINUM WHEEL, FULLY PAINTED SILVER LITHO
-          </div>
-          <div className="wheel-info-2">Standard on Touring FWD</div>
-          <div className="wheel-name">(WGU)</div>
-        </div>
-         */}
         <NavigationButton
+          type= {rigthId}
           buttonText={rightButtonText}
           isDisabled={activeWheelIndex === allWheelList.length - 1}
+          onButtonClick={this.onNavigationButtonClick}
         />
       </div>
     );
